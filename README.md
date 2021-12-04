@@ -12,6 +12,11 @@ Create a file `.eslintrc.js` and add the following.
 
 ```js
 module.exports = {
+  root: true,
+  // add `root: true` if for example you're in a monorepo and don't want
+  // a specific module to inherit eslint rules from other configs higher on
+  // the file system tree.
+
   extends: 'monosvelte',
   parserOptions: {
     tsconfigRootDir: __dirname,
