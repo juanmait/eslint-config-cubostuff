@@ -1,18 +1,26 @@
 {
-  "name": "eslint-config-cubostuff",
-  "version": "1.0.0",
+  "name": "eslint-config-monosvelte",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "format": "npx prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "files": [],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
     "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "prettier": "^2.5.0",
+    "prettier-plugin-svelte": "^2.5.0",
     "typescript": "^4.5.2"
   }
 }
