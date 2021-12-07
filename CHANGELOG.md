@@ -1,0 +1,3 @@
+- add svelte support.
+- first working typescript setup.
+- first commit.

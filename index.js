@@ -1,14 +1,25 @@
-/**
- * - Check [here](https://typescript-eslint.io/docs/linting/linting#configuration) for the basic
- *   config.
- */
 module.exports = {
+  env: {
+    es6: true,
+    browser: true,
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    // tsconfigRootDir: __dirname,
+    ecmaVersion: 2019,
+    sourceType: 'module',
     project: ['./tsconfig.json'],
+    extraFileExtensions: ['.svelte'],
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['svelte3', '@typescript-eslint'],
+  overrides: [
+    {
+      files: ['*.svelte'],
+      processor: 'svelte3/svelte3',
+    },
+  ],
+  settings: {
+    'svelte3/typescript': () => require('typescript'),
+  },
   extends: [
     /**
      * ESLint's builtin "recommended" config - it turns on a small, sensible set of rules which
