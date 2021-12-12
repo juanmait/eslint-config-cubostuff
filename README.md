@@ -1,7 +1,7 @@
 # eslint-config-monosvelte
 
 ```bash
-npm install eslint-config-monosvelte
+npm install @cubostuff/eslint-config-monosvelte
 ```
 
 ## Usage
