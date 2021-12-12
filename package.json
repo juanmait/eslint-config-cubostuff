@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-monosvelte",
+  "name": "@cubostuff/eslint-config-monosvelte",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
