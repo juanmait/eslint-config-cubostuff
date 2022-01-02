@@ -16,9 +16,22 @@ module.exports = {
   // add this if you're in a monorepo and don't want a specific member to inherit eslint rules from
   // other configs that exists higher on the file system tree.
 
-  extends: 'monosvelte',
+  extends: '@cubostuff/eslint-config-monosvelte',
   parserOptions: {
     tsconfigRootDir: __dirname,
   },
 };
+```
+
+## Release
+
+```bash
+npm version minor
+# options (major, minor, or patch)
+# - increments the version your package.json based on the type of the change
+# - commits this version bump
+# - creates a tag for the current release
+npm publish
+git push
+git push --tags
 ```
