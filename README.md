@@ -14,7 +14,7 @@ Create a file `.eslintrc.js` and add the following.
 module.exports = {
   root: true,
   // add this if you're in a monorepo and don't want a specific member to inherit eslint rules from
-  // other configs that exists higher on the file system tree.
+  // other configs that exists higher on the file system's tree.
 
   extends: '@cubostuff/eslint-config-monosvelte',
   parserOptions: {
