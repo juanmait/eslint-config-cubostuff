@@ -4,6 +4,8 @@
 npm install @cubostuff/eslint-config-monosvelte
 ```
 
+You'll also need to install the `peerDependencies`.
+
 ## Usage
 
 Create a file `.eslintrc.js` and add the following.
