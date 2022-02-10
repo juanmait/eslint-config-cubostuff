@@ -27,6 +27,12 @@ module.exports = {
 
 ## Release
 
+Make sure to check this links:
+
+- https://www.conventionalcommits.org
+- https://keepachangelog.com
+- https://semver.org
+
 ```bash
 npm version minor
 # options (major, minor, or patch)
@@ -37,3 +43,21 @@ npm publish
 git push
 git push --tags
 ```
+
+## Release Beta
+
+```bash
+npm version 1.0.0-beta.1
+# - bump package version
+# - creates a git tag
+npm publish --tag beta
+git push
+git push --tags
+```
+
+## Dependency changelogs
+
+- https://github.com/typescript-eslint/typescript-eslint/blob/main/CHANGELOG.md
+- https://github.com/eslint/eslint/blob/main/CHANGELOG.md
+- https://github.com/sveltejs/eslint-plugin-svelte3/blob/master/CHANGELOG.md
+- https://github.com/sveltejs/prettier-plugin-svelte/blob/master/CHANGELOG.md

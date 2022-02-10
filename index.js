@@ -18,7 +18,7 @@ module.exports = {
     },
   ],
   settings: {
-    'svelte3/typescript': () => require('typescript'),
+    'svelte3/typescript': true, // load TypeScript as peer dependency
   },
   extends: [
     /**

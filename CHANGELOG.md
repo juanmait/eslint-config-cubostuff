@@ -5,7 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.0.0 - 2022-01-09
+## 1.0.0.beta.1 - 2022-02-10
+
+### Added
+
+- add support for svelte `{@const ...}` tag.
+- upgrade dependencies
+  ```
+  @typescript-eslint/eslint-plugin ^5.6.0 → ^5.11.0
+  @typescript-eslint/parser ^5.6.0 → ^5.11.0
+  eslint ^8.4.1 → ^8.8.0
+  eslint-plugin-import ^2.25.3 → ^2.25.4
+  eslint-plugin-svelte3 ^3.2.1 → ^3.4.0
+  prettier-plugin-svelte ^2.5.1 → ^2.6.0
+  typescript ^4.5.3 → ^4.5.5
+  ```
+
+### Fixed
+
+- fix svelte3/typescript not being loaded as a peer dependency
+
+## 1.0.0.beta.0 - 2022-01-09
 
 ### Changed
 
