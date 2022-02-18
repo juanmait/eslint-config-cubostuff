@@ -13,6 +13,9 @@ Create a file `.eslintrc.js` and add the following.
 > should be **.eslintrc.cjs** if your package.json has `"type": "module"`.
 
 ```js
+/**
+ * @type {import('eslint').Linter.Config}
+ */
 module.exports = {
   root: true,
   // add this if you're in a monorepo and don't want a specific member to inherit eslint rules from
@@ -20,6 +23,7 @@ module.exports = {
 
   extends: '@cubostuff/eslint-config-monosvelte',
   parserOptions: {
+    project: ['./tsconfig.json'],
     tsconfigRootDir: __dirname,
   },
 };
@@ -54,6 +58,20 @@ npm publish --tag beta
 git push
 git push --tags
 ```
+
+## Peer Dependencies
+
+- @types/eslint
+- @typescript-eslint/eslint-plugin
+- @typescript-eslint/parser
+- eslint
+- eslint-config-prettier
+- eslint-plugin-eslint-comments
+- eslint-plugin-import
+- eslint-plugin-svelte3
+- prettier
+- prettier-plugin-svelte
+- typescript
 
 ## Dependency changelogs
 
